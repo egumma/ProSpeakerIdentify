@@ -1,0 +1,21 @@
+
+https://github.com/Atul-Anand-Jha/Speaker-Identification-Python.git
+
+>pip install virtualenv 
+>virtualenv speaker-venv
+>speaker-venv\Scripts\activate
+>speaker-venv\Scripts\deactivate
+
+
+/Speaker-Identification-Python$ pip install pathlib
+/Speaker-Identification-Python$ pip install numpy
+/Speaker-Identification-Python$ pip install scipy
+/Speaker-Identification-Python$ pip install sklearn
+/Speaker-Identification-Python$ pip install python_speech_features
+/Speaker-Identification-Python$ python featureextraction.py
+/Speaker-Identification-Python$ python modeltraining.py
+/Speaker-Identification-Python$ python test.py
+
+
+https://www.drivereasy.com/knowledge/solved-wifi-network-not-showing-up-on-computer/#Method2
+http://www.tomshardware.com/answers/id-3023416/wifi-networks-showing-windows.html

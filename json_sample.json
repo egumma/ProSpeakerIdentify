@@ -1,0 +1,10 @@
+{
+	"language" : "Python",
+	"framework" : "Flask",
+	"version_info" : {
+		"python" : 3.4,
+		"flask" : 0.12
+	},
+	"examples" : ["query", "form"],
+	"boolean_test" : true
+}
