@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ProCreate voice record, stop and pause</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  
+  <body>
+    <h2>Voice Record </h2></br>
+	<b>Employee ID: </b> <input type="text" id="person_id" value={{ person_id }}/></p>
+    <p>
+		<ol>
+		  <li> <b>1. </b>Words mean more than what is set down on paper. It takes the human voice to infuse them with deeper meaning</li>
+		  <li> <b>2. </b>The Human Voice is the most perfect instrument of all</li>
+		  <li> <b>3. </b>We often refuse to accept an idea merely because the tone of voice in which it has been expressed is unsympathetic to us.</li>
+		  <li> <b>4. </b>The tongue can paint what the eyes can’t see.</li>
+		  <li> <b>5. </b>Breathe and the World Breathes with You.</li>
+		</ol> 
+	</p>
+	<div id="wrapper">
+		<b>Tick voice data type?</b>
+		<p> <input type="radio" name="voice_type" value="train_voice" checked>Training Voice</input> </p>
+		<p> <input type="radio" name="voice_type" value="verify_voice">Verify Voice</input> </p>
+	</div>
+    <div id="controls">
+  	 <button id="recordButton">Record</button>
+  	 <button id="pauseButton" disabled>Pause</button>
+  	 <button id="stopButton" disabled>Stop</button>
+    </div>
+    <div id="formats">Format: start recording to see sample rate</div>
+  	<h3>Recordings</h3>
+  	<ol id="recordingsList"></ol>
+	
+	<br/>
+	<div>
+		<div id="log"></div>
+		<button id="trainDataButton">Train Voice</button> &nbsp;
+		<button id="verifyDataButton">Verify Voice</button>
+	</div>
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+	<script type="text/javascript" src="{{ url_for('static', filename='recorder.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+    
+  </body>
+</html>
